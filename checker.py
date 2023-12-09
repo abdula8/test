@@ -3,7 +3,6 @@ import subprocess
 import sys
 """
 This script is used to automate the deployment process of odoo project on AWS sever
-
 """
 def check_and_clone(directory_path, git_repo_url):
     if os.path.exists(directory_path) and os.path.isdir(directory_path):
