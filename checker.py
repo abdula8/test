@@ -36,7 +36,7 @@ if __name__ == "__main__":
         # Example usage:
         directory_to_check = "./odoo"
         # git_repository_url = "https://github.com/abdula8/odoo.git"
-        git_repository_url = sys.arv[1]
+        git_repository_url = sys.argv[1]
         check_and_clone(directory_to_check, git_repository_url)
     else:
         restart_command(command_to_run)
