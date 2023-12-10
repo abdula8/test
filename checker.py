@@ -27,7 +27,7 @@ def start_command(command):
     
 if __name__ == "__main__":
     # command_to_run = "python3 odoo-bin --addons-path=addons -d elfate7"
-    commandD_to_run = "python3 odoo-bin --addons-path=addons -r faten -w 123456789 --db_host 10.0.148.116 --database postgres -i base"
+    command_to_run = "python3 odoo-bin --addons-path=addons -r faten -w 123456789 --db_host 10.0.148.116 --database postgres -i base"
     if len(sys.argv) == 2 and sys.argv[1] == "--restart":
         restart_command(command_to_run)
     elif is_command_running(command_to_run):
